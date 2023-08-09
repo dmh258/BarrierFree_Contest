@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/fur_name"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="자주 잊어버리는 물건을  입력해볼까요?"
+                android:textColor="#252525"
+                android:textSize="40sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="302dp"
+                android:layout_height="239dp"
+                android:layout_above="@+id/input_btn"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back1"></ImageView>
+            <Button
+                android:id="@+id/input_btn"
+                android:layout_width="352dp"
+                android:layout_height="45.8dp"
+                android:layout_above="@+id/delete_btn"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/roundedbutton_black"
+                android:text="물건 입력하기"
+                android:textColor="#FDFAFA"
+                android:textSize="25sp"></Button>
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="352dp"
+                android:layout_height="45.8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/roundedbutton_red"
+                android:text="물건 삭제하기"
+                android:textColor="#FDFAFA"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
