@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35302D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fur_name"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="가구의 이름을 입력해주세요."
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="24dp"
+                android:text=" 가구이름 >"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editsearch"
+                android:layout_width="match_parent"
+                android:layout_height="45.8dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/recbrown"
+                android:paddingLeft="24dp"
+                android:ems="10"
+                android:hint="가구 이름을 입력해 주세요"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/next_fur"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="24dp"
+                android:text=" 다음으로 >"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/next_fur"
+                android:layout_width="352dp"
+                android:layout_height="45.8dp"
+                android:layout_above="@+id/finish_fur"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/roundedbutton_white"
+                android:text="해당 가구에 물건 입력하기"
+                android:textColor="#252525"
+                android:textSize="25sp"></Button>
+
+            <Button
+                android:id="@+id/finish_fur"
+                android:layout_width="352dp"
+                android:layout_height="45.8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/roundedbutton_white"
+                android:text="가구 및 물건 입력완료"
+                android:textColor="#252525"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

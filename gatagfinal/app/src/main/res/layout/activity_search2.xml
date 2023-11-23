@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <TextView
+                android:id="@+id/obj_name"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:textColor="#252525"
+                android:textSize="56.6sp" />
+
+            <TextView
+                android:id="@+id/fur_name"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/obj_name"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:paddingLeft="24dp"
+                android:textColor="#252525"
+                android:textSize="38.3sp" />
+
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="302dp"
+                android:layout_height="239dp"
+                android:layout_above="@+id/delete_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/back2" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="352dp"
+                android:layout_height="45.8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/roundedbutton_red"
+                android:text="도움 요청하기"
+                android:textColor="#FDFAFA"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
