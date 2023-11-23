@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F6E73">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/textView_obj1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="OO에 위치한 물건의 이름을 입력해주세요."
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView_obj3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true"
+                android:text="물건이름 >"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <EditText
+                android:id="@+id/editobj1"
+                android:layout_width="match_parent"
+                android:layout_height="45.8dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/recgreen"
+                android:paddingLeft="24dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="물건 이름을 입력해 주세요"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_above="@+id/next_obj"
+                android:layout_marginBottom="15dp"
+                android:gravity="left"
+                android:text="다음으로 >"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/next_obj"
+                android:layout_width="352dp"
+                android:layout_height="45.8dp"
+                android:layout_above="@+id/finish_obj"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/roundedbutton_white"
+                android:text="물건 추가 입력하기"
+                android:textColor="#252525"
+                android:textSize="25sp"></Button>
+
+            <Button
+                android:id="@+id/finish_obj"
+                android:layout_width="352dp"
+                android:layout_height="45.8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/roundedbutton_white"
+                android:text="물건 입력완료"
+                android:textColor="#252525"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_above="@+id/checkBox1"
+                android:layout_marginBottom="15dp"
+                android:gravity="left"
+                android:text="위험물건 체크 >"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:background="@drawable/roundedbutton_red"
+                android:layout_width="352dp"
+                android:layout_height="48.5dp"
+                android:layout_above="@+id/textView3"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:text="위험물건이면 체크해주세요" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

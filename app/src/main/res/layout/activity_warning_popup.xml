@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="350dp"
+    android:layout_height="450dp"
+    android:background="#F9CDB5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/warning"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:background="#F9CDB5"
+        android:text="경 고"
+        android:textColor="#E24C4B"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textwarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:textColor="#E24C4B"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="주의해주세요!\n해당가구에\n위험물건이 있습니다."
+        android:background="#F9CDB5"/>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/recwhite"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="확인"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+</RelativeLayout>

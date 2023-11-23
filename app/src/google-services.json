@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "690247118414",
+    "firebase_url": "https://gatag-1a0cb.firebaseio.com",
+    "project_id": "gatag-1a0cb",
+    "storage_bucket": "gatag-1a0cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690247118414:android:32d43bbf71815e2b9a1d1f",
+        "android_client_info": {
+          "package_name": "sungjushin.gatag3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690247118414-u3cq24q0qaobul9bud3v0v6159p4lihj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApk72NzMdZXlvw5szbe9jXIycgU7ff_ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690247118414-u3cq24q0qaobul9bud3v0v6159p4lihj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
